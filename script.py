@@ -1,0 +1,1 @@
+#spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.0 --jars C:\path\to\hadoop-common-3.4.0.jar,C:\path\to\hadoop-hdfs-3.4.0.jar,C:\path\to\hadoop-auth-3.4.0.jar,C:\path\to\hadoop-mapreduce-client-core-3.4.0.jar --conf spark.executor.extraJavaOptions="-Dhadoop.native.io=false" --conf spark.driver.extraJavaOptions="-Dhadoop.native.io=false" streaming.py
